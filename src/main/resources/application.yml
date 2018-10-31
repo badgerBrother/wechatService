@@ -17,6 +17,15 @@ spring:
       charset: UTF-8
       force: false
       enabled: true
+  rabbitmq:
+    host: 10.196.20.103
+    port: 5672
+    username: test1
+    password: test1
+    virtual-host: /host
+    template:
+      exchange: v5orgsexchage
+    publisher-confirms: true
 logging:
   config: classpath:log4j2.xml
 rest:
